@@ -5,6 +5,9 @@ body {
 
     overflow: hidden;
     font-family: 'Times New Roman', Times, serif;
+
+    width: 100vw;
+    height: 100vh;
 }
 
 .head {
@@ -33,7 +36,7 @@ footer {
     color: #777777;
     margin-top: 85.5vh;
 
-    position:fixed;
+    position: fixed;
 
     width: 101vw;
     text-align: center;
@@ -72,19 +75,4 @@ footer {
 #EmailButton:hover {
     cursor: grab;
     color: rgb(121, 109, 109);
-}
-
-.LogoCenter {
-    text-align: center;
-    margin-top: 25vh;
-
-    border-radius: 5%;
-    height: fit-content;
-    width: 35vw;
-    
-    transition: 250ms;
-}
-.LogoCenter:hover {
-    cursor: grab;
-    width: 36vw;
 }
