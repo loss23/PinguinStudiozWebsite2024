@@ -48,11 +48,3 @@ signInWithEmailAndPassword(auth, email, password)
   });
 
 });
-
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-        window.location.assign("../index.html")
-      const uid = user.uid;
-      // ...
-    }
-});
