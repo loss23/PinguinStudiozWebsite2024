@@ -15,8 +15,9 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
 document.getElementById('SignUp').addEventListener("click", (e) => { 
-    const email = document.getElementById('Email').innerHTML;
-    const password = document.getElementById('Password').innerHTML;
+    const email = document.getElementById('Email').innerText;
+    const password = document.getElementById('Password').innerText;
+    console.log(email,password)
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed up 
