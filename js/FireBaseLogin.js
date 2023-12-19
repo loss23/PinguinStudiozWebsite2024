@@ -27,7 +27,24 @@ document.getElementById('SignUp').addEventListener("click", (e) => {
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log(errorCode,errorMessage)
+    document.getElementById('Email').value = "errorMessage";
     // ..
 });
 })
+
+document.getElementById('Login').addEventListener("click", (e) => { 
+    const email = document.getElementById('Email').value;
+    const password = document.getElementById('Password').value;
+signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    document.getElementById('Email').value = "errorMessage";
+  });
+
+});
