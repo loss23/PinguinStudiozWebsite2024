@@ -21,7 +21,7 @@
 
 <body>
     <div class="head">
-        <h1 onclick="LoginButton()" id="HeaderTitle">Pinguin Studioz</h1>
+        <h1 id="HeaderTitle">Pinguin Studioz</h1>
     </div>
 
     <footer>
@@ -48,9 +48,9 @@
         const auth = getAuth(app);
         const provider = new GoogleAuthProvider();
         
-        if (auth == null) {
-                signInWithRedirect(auth, provider);
-        }
+        document.getElementById('HeaderTitle').onclick(e => function() {
+            console.log(auth);
+        })
 
       </script>
 </body>
