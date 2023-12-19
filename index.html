@@ -48,10 +48,8 @@
         const auth = getAuth(app);
         const provider = new GoogleAuthProvider();
         
-        function LoginButton() {
-            if (auth == null) {
+        if (auth == null) {
                 signInWithRedirect(auth, provider);
-            }
         }
 
       </script>
