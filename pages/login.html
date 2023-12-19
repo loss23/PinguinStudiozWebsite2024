@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinguin Studioz</title>
-    <link rel="icon" type="image/x-icon" href="src/Pinguin2024.png">
-    <link rel="Stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="../src/Pinguin2024.png">
+    <link rel="Stylesheet" href="../css/login.css">
 
     <meta property="iframely:title" content="Pinguin Studioz" />
     <meta property="iframely:description" content="Coming soon..." />
@@ -24,35 +21,27 @@
         <h1 id="HeaderTitle">Pinguin Studioz</h1>
     </div>
 
+    <div class="LoginFrame">
+        <div>
+            <input placeholder="Email" id="Email" title="Email" type="text">
+        </div>
+        <div>
+            <input placeholder="Password" id="Password" title="Password" type="password">
+        </div>
+        <div>
+            <button id="Login">Login</button>
+        </div>
+        <div>
+            <button id="SignUp">Sign Up</button>
+        </div>
+    </div>
+
     <footer>
         <h2>- Pinguin Studioz -</h2>
         <a href="https://www.roblox.com/groups/13056582/Pinguin-Studioz#!/about" class="LinkButton" id="RobloxButton">Roblox</a>
         <a href="https://discord.gg/r78cZvyPwm" class="LinkButton" id="DiscordButton">Discord</a>
         <a href="mailto:creynolds1126.2006@gmail.com?subject=%3CPinguin%20Studioz%20Contact%3E" class="LinkButton" id="EmailButton">Email</a>
     </footer>
-
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getAuth, createUserWithEmailAndPassword, signInWithRedirect, signInWithEmailAndPassword, onAuthStateChanged, GoogleAuthProvider, signInWithPopup } from  "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-      
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-          apiKey: "AIzaSyCiXlz3jeuaVms1irD3rKlwVNE_DwnO14o",
-          authDomain: "pinguinstudiozweb.firebaseapp.com",
-          projectId: "pinguinstudiozweb",
-          storageBucket: "pinguinstudiozweb.appspot.com",
-          messagingSenderId: "197115887577",
-          appId: "1:197115887577:web:fa4c00a8bc48f63c6123c8"
-        };
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        const provider = new GoogleAuthProvider();
-        
-        document.getElementById('HeaderTitle').addEventListener("click", (e) => {
-            console.log(auth);
-        });
-
-      </script>
 </body>
 
-</html>
+<script type="module" src="../js/FireBaseLogin.js"></script>
