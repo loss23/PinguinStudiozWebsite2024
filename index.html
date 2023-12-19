@@ -49,9 +49,13 @@
         const user = auth.currentUser;
         const provider = new GoogleAuthProvider();
         
-        if (!user) {
-            window.location.assign("/pages/login.html")
-        }
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+
+            }else {
+                window.location.assign("pages/login.html");
+            }
+});
 
         document.getElementById('HeaderTitle').addEventListener("click", (e) => {
             console.log(user);

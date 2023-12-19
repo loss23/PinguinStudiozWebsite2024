@@ -55,4 +55,4 @@ onAuthStateChanged(auth, (user) => {
       const uid = user.uid;
       // ...
     }
-  });
+});
