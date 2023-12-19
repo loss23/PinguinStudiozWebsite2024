@@ -21,7 +21,7 @@
 
 <body>
     <div class="head">
-        <h1 id="HeaderTitle">Pinguin Studioz</h1>
+        <h1 onclick="LoginButton()" id="HeaderTitle">Pinguin Studioz</h1>
     </div>
 
     <footer>
@@ -33,6 +33,7 @@
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithRedirect, signInWithEmailAndPassword, onAuthStateChanged, GoogleAuthProvider, signInWithPopup } from  "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
       
         // Your web app's Firebase configuration
         const firebaseConfig = {
@@ -43,9 +44,16 @@
           messagingSenderId: "197115887577",
           appId: "1:197115887577:web:fa4c00a8bc48f63c6123c8"
         };
-
         const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
         
+        function LoginButton() {
+            if (auth == null) {
+                signInWithRedirect(auth, provider);
+            }
+        }
+
       </script>
 </body>
 
