@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(14, 14, 14);
+    color: azure;
+    text-align: center;
+
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.head {
+    background-color: #161616cc;
+    text-align: center;
+    position:fixed;
+
+    width: 101vw;
+    right: 0%;
+    top: 0%;
+}
+
+#HeaderTitle{
+    transition: 650ms;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#HeaderTitle:hover {
+    color: rgb(49, 93, 214);
+    cursor: grab;
+}
+
+footer {
+    background-color: #161616cc;
+    color: #777777;
+    margin-top: 85.5vh;
+
+    position:fixed;
+
+    width: 101vw;
+    text-align: center;
+
+    padding-bottom: .5%;
+    right: 0%;
+    bottom: 0%;
+}
+#RobloxButton {
+    text-decoration: none;
+    transition: 250ms;
+    color: rgb(216, 71, 71);
+}
+#DiscordButton {
+    text-decoration: none;
+    transition: 250ms;
+    color: rgb(56, 86, 219);
+    margin-right: .7%;
+    margin-left: .7%;
+}
+#EmailButton {
+    text-decoration: none;
+    transition: 250ms;
+    color: rgb(158, 143, 143);
+}
+
+
+#RobloxButton:hover {
+    cursor: grab;
+    color: rgb(143, 39, 39);
+}
+#DiscordButton:hover {
+    cursor: grab;
+    color: rgb(45, 69, 179);
+}
+#EmailButton:hover {
+    cursor: grab;
+    color: rgb(121, 109, 109);
+}
+
+.LogoCenter {
+    text-align: center;
+    margin-top: 25vh;
+
+    border-radius: 5%;
+    height: fit-content;
+    width: 35vh;
+    
+    transition: 250ms;
+}
+.LogoCenter:hover {
+    cursor: grab;
+    width: 36vh;
+}
