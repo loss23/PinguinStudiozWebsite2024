@@ -80,11 +80,11 @@ footer {
 
     border-radius: 5%;
     height: fit-content;
-    width: 35vh;
+    width: 35vw;
     
     transition: 250ms;
 }
 .LogoCenter:hover {
     cursor: grab;
-    width: 36vh;
+    width: 36vw;
 }
