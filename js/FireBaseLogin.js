@@ -27,7 +27,7 @@ document.getElementById('SignUp').addEventListener("click", (e) => {
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    document.getElementById('Email').value = "errorMessage";
+    document.getElementById('Email').value = errorMessage;
     // ..
 });
 })
@@ -44,7 +44,15 @@ signInWithEmailAndPassword(auth, email, password)
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    document.getElementById('Email').value = "errorMessage";
+    document.getElementById('Email').value = errorMessage;
   });
 
 });
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        window.location.assign("../index.html")
+      const uid = user.uid;
+      // ...
+    }
+  });
