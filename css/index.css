@@ -20,6 +20,48 @@ body {
     top: 0%;
 }
 
+.CenterBody{
+    color: rgb(255, 255, 255);
+
+    display: inline-grid;
+    grid-auto-flow: column;
+
+    gap: .7vw 1.2vh;
+
+    position: fixed;
+
+    width: 100vw;
+    height: auto;
+
+    right: 0%;
+    left: 3%;
+    top: 10vw;
+}
+
+.Object1 {
+    z-index: 2500;
+    transition: 850ms;
+    font-size: 1.2rem;
+
+    width: 25vw;
+    position: flex;
+    text-align: center;
+}
+.Object1 h2 {
+    font-size: 1.7rem;
+    transition: 1250ms;
+}
+.Object1 h2:hover {
+    cursor: grab;
+    color: rgb(53, 129, 201);
+}
+
+.Object1:hover {
+    color:rgb(181, 213, 255);
+    border-radius: .8rem;
+    padding-top: 2.5%;
+}
+
 #HeaderTitle{
     transition: 650ms;
     font-size: 1.6rem;
@@ -76,3 +118,7 @@ footer {
     cursor: grab;
     color: rgb(121, 109, 109);
 }
+
+
+@media (max-width:1291px) and (min-width:895px) {.Object1 {font-size: .9rem;}}
+@media (max-width:895px) { .Object1 {font-size: .7rem;} .CenterBody {top: 5vh;} }
