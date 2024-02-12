@@ -8,6 +8,8 @@ body {
 
     width: 100vw;
     height: 100vh;
+
+    font-size: 1.2vw;
 }
 
 .head {
@@ -32,31 +34,44 @@ body {
     height: auto;
 
     right: 0%;
-    left: 4%;
-    top: 25vh;
+    left: 0%;
+    top: 12vh;
+}
+.CenterBody2{
+    color: rgb(255, 255, 255);
+
+    display: grid;
+    grid-auto-flow: column;
+
+    position: fixed;
+
+    width: 100vw;
+    height: auto;
+
+    right: 0%;
+    left: 0%;
+    top: 50vh;
 }
 
 .Object1 {
     z-index: 2500;
     transition: 450ms;
-    font-size: 1.2rem;
 
     width: 25vw;
     position: flex;
     text-align: center;
 }
 .Object1 img {
-    width: 20vw;
+    width: 15vw;
 }
 .Object1 h2 {
-    font-size: 1.7rem;
     transition: 450ms;
 }
 
 .Object1:hover {
+    padding-top: 1.5vh;
     cursor: grab;
     color: rgb(53, 129, 201);
-    padding-top: 1.2vh;
 }
 
 #HeaderTitle{
