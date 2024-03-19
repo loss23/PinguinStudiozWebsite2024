@@ -58,11 +58,13 @@ body {
     transition: 450ms;
 
     width: 25vw;
+    height: auto;
     position: flex;
     text-align: center;
 }
 .Object1 img {
     width: 15vw;
+    height: auto;
 }
 .Object1 h2 {
     transition: 450ms;

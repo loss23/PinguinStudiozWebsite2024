@@ -15,7 +15,7 @@ Pinguin_Link.onclick = function() {
 };
 
 Lunar_Link.onclick = function() {
-    window.location.assign("https://www.roblox.com/groups/33652903/Lunar-Works#!/about")
+    window.location.assign("LunarWorks.html")
 };
 
 EmpireZ_Link2.onclick = function() {
